@@ -1,10 +1,14 @@
 "use client";
 
 import { useInteraction } from "@/components/Providers/InteractionProvider";
+import { counterValue } from "@/lib/atoms";
 import { cn } from "@/lib/utils";
+import { useAtomValue } from "jotai";
 
 const PreviewBox = () => {
 	const { isActive } = useInteraction();
+
+	const count = useAtomValue(counterValue);
 
 	return (
 		<div
@@ -17,7 +21,7 @@ const PreviewBox = () => {
 					"before:content[''] relative flex h-36 w-64 flex-col items-center justify-center gap-1 rounded-2xl bg-zinc-800 text-gray-50 duration-500 group-hover:duration-500 before:absolute before:top-0 before:right-3 before:-z-10 before:h-32 before:w-64 before:-skew-x-12 before:rounded-2xl before:bg-neutral-700 before:duration-500 group-hover:before:-right-3 group-hover:before:skew-x-12",
 					isActive && "duration-500 before:-right-3 before:skew-x-12",
 				)}>
-				<span className="text-5xl font-bold">Jr</span>
+				<span className="text-5xl font-bold">Dev {count}</span>
 				<p className="font-thin text-amber-300">- Frontend Developer -</p>
 			</div>
 		</div>
