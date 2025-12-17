@@ -1,6 +1,6 @@
 const FinalButton = () => {
 	return (
-		<button className="group relative overflow-hidden rounded-full bg-neutral-200 p-px dark:bg-neutral-800">
+		<button className="group relative cursor-pointer overflow-hidden rounded-full bg-neutral-200 p-px dark:bg-neutral-800">
 			<span className="absolute inset-0 overflow-hidden rounded-full">
 				<span className="pointer-events-none absolute inset-0 select-none">
 					<span
