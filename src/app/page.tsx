@@ -4,8 +4,8 @@ import { SearchBar } from "@/components/SearchBar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Nextjs Starter Frontend",
-	description: "Production grade Next.js starter template",
+	title: "Nextjs Input",
+	description: "Wroking On changes Input component",
 };
 
 const page = () => {
