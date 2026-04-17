@@ -19,7 +19,6 @@ const page = () => {
         <CardHeader>
           <CardTitle className="text-center text-2xl">
             Basic Calculaotr
-            
           </CardTitle>
         </CardHeader>
         <CardContent>
