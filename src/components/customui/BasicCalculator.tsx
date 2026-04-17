@@ -65,6 +65,7 @@ const BasicCalculator = () => {
         />
       </div>
       <Input
+        placeholder="Preview Show Here"
         value={count}
         disabled
         className="w-full"
