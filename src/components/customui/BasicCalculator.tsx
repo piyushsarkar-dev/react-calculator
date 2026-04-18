@@ -47,6 +47,7 @@ const BasicCalculator = () => {
     setInputTwo("");
     setCount("");
   };
+  const isDisabled = inputOne === "" || inputTwo === "";
 
   return (
     <section className="mx-auto grid w-full max-w-md place-items-center gap-3">
@@ -71,12 +72,29 @@ const BasicCalculator = () => {
         className="w-full"
       />
       <div className="grid w-full grid-cols-4 gap-2">
-        <Button onClick={plus}>+</Button>
-        <Button onClick={minus}>-</Button>
-        <Button onClick={multiply}>*</Button>
-        <Button onClick={divide}>/</Button>
+        <Button
+          disabled={isDisabled}
+          onClick={plus}>
+          +
+        </Button>
+        <Button
+          disabled={isDisabled}
+          onClick={minus}>
+          -
+        </Button>
+        <Button
+          disabled={isDisabled}
+          onClick={multiply}>
+          *
+        </Button>
+        <Button
+          disabled={isDisabled}
+          onClick={divide}>
+          /
+        </Button>
       </div>
       <Button
+        disabled={inputOne === "" && inputTwo === ""}
         onClick={reset}
         className="w-full bg-red-500 text-white">
         Reset
