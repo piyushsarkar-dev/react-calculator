@@ -17,6 +17,7 @@ const BasicCalculator = () => {
     setInputOne("");
     setInputTwo("");
   };
+  
   const minus = () => {
     if (inputOne !== "" && inputTwo !== "") {
       const total = Number(inputOne) - Number(inputTwo);
