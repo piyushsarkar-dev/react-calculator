@@ -5,14 +5,27 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/shadcnui/card";
+import TextType from "@/components/TextType";
 
 const page = () => {
   return (
-    <section className="grid h-[90dvh] place-items-center">
-      <Card className="w-sm">
+    <section className="grid h-dvh place-items-center">
+      <Card className="max-w-md">
         <CardHeader>
           <CardTitle className="text-center text-2xl">
-            Advanced Calculaotr
+            <TextType
+              text={[
+                "Advanced Calculator",
+                "Fast • Smart • Powerful",
+                "Powered by Next.js ⚡",
+              ]}
+              typingSpeed={65}
+              pauseDuration={800}
+              showCursor
+              cursorCharacter="_"
+              deletingSpeed={50}
+              cursorBlinkDuration={0.5}
+            />
           </CardTitle>
         </CardHeader>
         <CardContent>

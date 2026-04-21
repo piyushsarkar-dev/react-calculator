@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <section className="grid h-[90dvh] place-items-center">
-      <Card className="w-sm">
+    <section className="grid h-dvh place-items-center">
+      <Card className="max-w-md">
         <CardHeader>
           <CardTitle className="text-center text-2xl">
-            Basic Calculaotr
+            Basic Calculator
           </CardTitle>
         </CardHeader>
         <CardContent>
