@@ -22,6 +22,7 @@ const page = () => {
           </CardTitle>
         </CardHeader>
         <CardContent>
+          
           <BasicCalculator />
         </CardContent>
       </Card>
