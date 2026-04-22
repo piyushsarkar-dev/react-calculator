@@ -8,17 +8,18 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nextjs Starter Frontend",
-  description: "Production grade Next.js starter template",
+  title: "React Calculator || Home",
+  description:
+    "A simple and advanced calculator built with Next.js and TypeScript.",
 };
 
 const page = () => {
   return (
-    <section className="grid h-[90dvh] place-items-center">
-      <Card className="w-sm">
+    <section className="grid h-dvh place-items-center">
+      <Card className="max-w-md">
         <CardHeader>
           <CardTitle className="text-center text-2xl">
-            Basic Calculaotr
+            Basic Calculator
           </CardTitle>
         </CardHeader>
         <CardContent>

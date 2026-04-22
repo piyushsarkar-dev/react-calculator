@@ -5,14 +5,34 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/shadcnui/card";
+import TextType from "@/components/TextType";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "React Calculator || Advanced",
+  description:
+    "A simple and advanced calculator built with Next.js and TypeScript.",
+};
 
 const page = () => {
   return (
-    <section className="grid h-[90dvh] place-items-center">
-      <Card className="w-sm">
+    <section className="grid h-dvh place-items-center">
+      <Card className="max-w-md">
         <CardHeader>
           <CardTitle className="text-center text-2xl">
-            Advanced Calculaotr
+            <TextType
+              text={[
+                "Advanced Calculator",
+                "Fast • Smart • Powerful",
+                "Powered by Next.js ⚡",
+              ]}
+              typingSpeed={65}
+              pauseDuration={3500}
+              showCursor
+              cursorCharacter="_"
+              deletingSpeed={50}
+              cursorBlinkDuration={0.5}
+            />
           </CardTitle>
         </CardHeader>
         <CardContent>
