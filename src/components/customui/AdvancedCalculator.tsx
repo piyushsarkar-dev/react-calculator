@@ -18,6 +18,8 @@ const AdvancedCalculator = () => {
   const [inputTwo, setInputTwo] = useState("");
   const [operator, setOperator] = useState("");
   const [output, setOutput] = useState("");
+  const allClear = inputOne === "" && inputTwo === "" && output === "";
+  const calEmpty = operator === "" || inputOne === "" || inputTwo === "";
   const mainHandeler = () => {
     if (inputOne !== "" && inputTwo !== "") {
       const valuOne = Number(inputOne);
@@ -92,14 +94,15 @@ const AdvancedCalculator = () => {
           placeholder="Output"
         />
         <Button
-          disabled={operator === "" || inputOne === "" || inputTwo === ""}
+          className={calEmpty ? `cursor-not-allowed` : `bg-blue-400 text-white`}
+          disabled={calEmpty}
           onClick={mainHandeler}>
           Calculate
         </Button>
         <Button
-          disabled={inputOne === "" && inputTwo === "" && output === ""}
-          onClick={clear}
-          className="col-span-3">
+          className={`col-span-3 ${allClear ? `cursor-not-allowed` : `bg-red-500 text-white`} `}
+          disabled={allClear}
+          onClick={clear}>
           All Clear
         </Button>
       </div>

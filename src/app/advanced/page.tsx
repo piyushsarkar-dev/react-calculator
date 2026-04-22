@@ -9,7 +9,7 @@ import TextType from "@/components/TextType";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "React Calculator || Advanced",
+  title: "React Calculator | Advanced",
   description:
     "A simple and advanced calculator built with Next.js and TypeScript.",
 };
